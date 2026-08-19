@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "imblearn>=0.0",
     "ipykernel>=7.3.0",
     "matplotlib>=3.11.1",
     "numpy>=2.5.2",
@@ -12,4 +13,6 @@ dependencies = [
     "pyarrow>=25.0.1",
     "scikit-learn>=1.9.0",
     "seaborn>=0.13.2",
+    "statsmodels>=0.14.6",
+    "xgboost>=3.4.1",
 ]
