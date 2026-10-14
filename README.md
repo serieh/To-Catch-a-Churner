@@ -210,18 +210,18 @@ After `ML.ipynb`, your `Models/` folder contains the same pipelines shipped in t
 
 ## Pre-trained models
 
-The three final pipelines (preprocessor + fitted estimator, ready to `predict_proba`) are attached to the **v1.0.0 GitHub release** of this repository:
+The three final pipelines (preprocessor + fitted estimator, ready to `predict_proba`) are attached to the **v1.0.0 — Final models** of this repository:
 
 | Asset | Size |
 |---|---|
-| `xgboost_final_model.joblib` (champion) | ~553 KB |
-| `rf_final_model.joblib` | ~7.2 MB |
-| `svc_final_model.joblib` | ~1.1 MB |
+| `xgboost_model_v1.0.0.joblib` (champion) | ~553 KB |
+| `rf_model_v1.0.0.joblib` | ~7.2 MB |
+| `svc_model_v1.0.0.joblib` | ~1.1 MB |
 
 ```python
 import joblib
 
-model = joblib.load("xgboost_final_model.joblib")  # full sklearn Pipeline
+model = joblib.load("xgboost_model_v1.0.0.joblib")  # full sklearn Pipeline
 
 probabilities = model.predict_proba(X_train)       # column 1 = P(churn)
 churn_risk    = probabilities[:, 1]
