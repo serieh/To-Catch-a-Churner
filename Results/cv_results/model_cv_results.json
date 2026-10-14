@@ -1,0 +1,43 @@
+[
+  {
+    "Model":"XGBoost",
+    "CV ROC-AUC":0.8503736155,
+    "CV AP":0.6684608597,
+    "CV F1":0.6396363636,
+    "Best Params":{
+      "model__colsample_bytree":0.6,
+      "model__gamma":0.5,
+      "model__learning_rate":0.0271342374,
+      "model__max_depth":5,
+      "model__min_child_weight":5,
+      "model__n_estimators":100,
+      "model__reg_alpha":0.01,
+      "model__reg_lambda":2,
+      "model__subsample":0.6
+    }
+  },
+  {
+    "Model":"Random Forest",
+    "CV ROC-AUC":0.8481862902,
+    "CV AP":0.6610353701,
+    "CV F1":0.6353482973,
+    "Best Params":{
+      "model__n_estimators":200,
+      "model__min_samples_split":2,
+      "model__min_samples_leaf":8,
+      "model__max_features":"log2",
+      "model__max_depth":null,
+      "model__class_weight":"balanced"
+    }
+  },
+  {
+    "Model":"SVC",
+    "CV ROC-AUC":0.8445981668,
+    "CV AP":0.6598113295,
+    "CV F1":0.5985237634,
+    "Best Params":{
+      "model__C":21.3683290724,
+      "model__gamma":0.0007068975
+    }
+  }
+]

@@ -1,7 +1,7 @@
 [project]
-name = "week-1-2"
-version = "0.1.0"
-description = "Add your description here"
+name = "to-catch-a-churner"
+version = "1.0.0"
+description = "Telco customer churn prediction: EDA, preprocessing, and model comparison (Random Forest, SVC, XGBoost) with rigorous cross-validation and held-out evaluation"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
